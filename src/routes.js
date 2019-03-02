@@ -6,6 +6,6 @@ const routes = express.Router();
 
 routes.get('/tweets', TweetController.find);
 routes.post('/tweets', TweetController.create);
-routes.post('/likes', LikeController.create);
+routes.post('/likes/:id', LikeController.create);
 
 module.exports = routes;
