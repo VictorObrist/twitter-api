@@ -7,6 +7,9 @@ find = async (req, res) => {
 
 create = async (req,res) =>{
     const tweet = await Tweet.create(req.body);
+
+    req.io.emit('tweet',tweet); //enviar por websocket el nuevo tweet para los usuarios online
+
     return res.json(tweet);
 };
 

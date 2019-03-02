@@ -7,6 +7,8 @@ create = async (req,res) =>{
     
     await tweet.save();
 
+    req.io.emit('like',tweet);
+
     res.json(tweet);
 };
 
