@@ -1,0 +1,12 @@
+{
+  "name": "twitter-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Victor Obrist",
+  "description": "Twitter like Application",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
